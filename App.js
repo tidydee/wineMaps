@@ -13,13 +13,6 @@ import {
 
 import MapView from "react-native-maps";
 
-const Images = [
-  { uri: "https://i.imgur.com/sNam9iJ.jpg" },
-  { uri: "https://i.imgur.com/N7rlQYt.jpg" },
-  { uri: "https://i.imgur.com/UDrH0wm.jpg" },
-  { uri: "https://i.imgur.com/Ka8kNST.jpg" }
-]
-
 const { width, height } = Dimensions.get("window");
 
 const CARD_HEIGHT = height / 4;
@@ -30,44 +23,44 @@ export default class screens extends Component {
     markers: [
       {
         coordinate: {
-          latitude: 45.524548,
-          longitude: -122.6749817,
+          latitude: 49.5049303,
+          longitude: -119.5801144,
         },
-        title: "Best Place",
-        description: "This is the best place in Portland",
-        image: Images[0],
+        title: "Pesreus Winery",
+        description: "This is where text goes...",
+        image: { uri: "https://media-cdn.tripadvisor.com/media/photo-s/06/57/78/7f/perseus-winery.jpg"},
       },
       {
         coordinate: {
-          latitude: 45.524698,
-          longitude: -122.6655507,
+          latitude: 49.5833534,
+          longitude: -119.5863555,
         },
-        title: "Second Best Place",
-        description: "This is the second best place in Portland",
-        image: Images[1],
+        title: "JoieFarm Winery",
+        description: "This is where text goes...",
+        image: { uri: "https://i2.wp.com/media.scoutmagazine.ca/2018/02/36055860780_2ab97714fa_o.jpg?fit=900%2C600" },
       },
       {
         coordinate: {
-          latitude: 45.5230786,
-          longitude: -122.6701034,
+          latitude: 49.5123363,
+          longitude: -119.5760412,
         },
-        title: "Third Best Place",
-        description: "This is the third best place in Portland",
-        image: Images[2],
+        title: "Poplar Grove Winery",
+        description: "This is where text goes...",
+        image: { uri: "https://discovernaramata.com/wp-content/uploads/2016/02/Poplar_Grove-02.jpg" },
       },
       {
         coordinate: {
-          latitude: 45.521016,
-          longitude: -122.6561917,
+          latitude: 49.3883722,
+          longitude: -119.5592415,
         },
-        title: "Fourth Best Place",
-        description: "This is the fourth best place in Portland",
-        image: Images[3],
+        title: "Blasted Church Vineyards",
+        description: "This is where text goes...",
+        image: { uri: "http://travelmedia.hellobc.com/getmedia/960aee36-961f-4661-8658-64971f4614d9/3-1795-600.jpg.aspx?width=600&height=400&ext=.jpg" },
       },
     ],
     region: {
-      latitude: 45.52220671242907,
-      longitude: -122.6653281029795,
+      latitude: 49.5079271,
+      longitude: -119.5884038,
       latitudeDelta: 0.04864195044303443,
       longitudeDelta: 0.040142817690068,
     },
@@ -262,4 +255,3 @@ const styles = StyleSheet.create({
   },
 });
 
-// AppRegistry.registerComponent("mapfocus", () => screens);
